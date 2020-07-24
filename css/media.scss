@@ -1,0 +1,343 @@
+@media (max-width: 1300px) {
+	// NAVIGATION
+	.navigation {
+		&__menu {
+			width: 90%;
+		}
+	}
+	// NAVIGATION
+}
+
+@media (max-width: 1200px) {
+	// NAVIGATION
+	.navigation {
+		&__menu {
+			.nav-link {
+				font-size: 0.9rem;
+			}
+		}
+	}
+	// NAVIGATION
+	// WHAT WE DO
+	.what-we-do {
+		&__card {
+			margin-bottom: 2rem;
+		}
+		&__block {
+			margin-bottom: 2rem;
+		}
+	}
+	// WHAT WE DO
+	// CASES
+	.cases {
+		&__section {
+			margin-bottom: 3.5rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	// CASES
+	// PRICES
+	.prices {
+		&__caption {
+			&-title {
+				text-align: center;
+			}
+		}
+		&__price {
+			&-text {
+				text-align: center;
+			}
+		}
+	}
+	// PRICES
+}
+
+@media (max-width: 991px) {
+	// NAVIGATION
+	.navigation {
+		.navbar {
+			&-brand {
+				margin-right: 0;
+			}
+		}
+		&__menu {
+			width: 100%;
+			.nav-link {
+				text-align: center;
+			}
+		}
+	}
+	// NAVIGATION
+	// HEADER
+	.header {
+		&__bg {
+			padding: 2rem 0;
+			min-height: 700px;
+		}
+		&__card {
+			&-title {
+				text-align: center;
+			}
+			&-text {
+				text-align: center;
+			}
+		}
+		&__image-block {
+			min-height: 90vw;
+		}
+	}
+	// HEADER
+	// ABOUT
+	.about {
+		&__caption {
+			&-title {
+				text-align: center;
+			}
+			&-text {
+				text-align: center;
+			}
+		}
+		&__card {
+			.card-title {
+				text-align: center;
+			}
+			.card-text {
+				text-align: center;
+			}
+		}
+		&__image {
+			min-height: 90vw;
+		}
+	}
+	// ABOUT
+	// WHAT WE DO
+	.what-we-do {
+		&__caption {
+			&-title {
+				text-align: center;
+			}
+		}
+		&__card {
+			.card {
+				width: 55%;
+			}
+		}
+		&__block {
+			&-title {
+				text-align: center;
+			}
+			p {
+				text-align: center;
+			}
+		}
+		&__calculation {
+			.card {
+				&-title {
+					text-align: center;
+				}
+				&-text {
+					text-align: center;
+				}
+			}
+			&-form {
+				&-text {
+					text-align: center;
+					margin-top: 1rem;
+				}
+			}
+		}
+	}
+	// WHAT WE DO
+	// TECHNOLOGIES STACK
+	.technologies-stack {
+		&__caption {
+			&-title {
+				text-align: center;
+			}
+		}
+		&__block {
+			margin-bottom: 1rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	// TECHNOLOGIES STACK
+	// CASES
+	.cases {
+		&__caption {
+			&-title {
+				text-align: center;
+			}
+		}
+		&__card {
+			&-title {
+				text-align: center;
+			}
+		}
+	}
+	// CASES
+	// PRICES
+	.prices {
+		&__form {
+			&-text {
+				text-align: center;
+			}
+		}
+	}
+	// PRICES
+	// WHO WILL WORK
+	.who-will-work {
+		&__caption {
+			&-title {
+				text-align: center;
+			}
+			&-text {
+				text-align: center;
+			}
+		}
+		&__card {
+			&-text {
+				text-align: center;
+			}
+			&-icon {
+				margin-right: 0;
+				margin-bottom: 0.6rem;
+				&-text {
+					text-align: center;
+				}
+			}
+		}
+		&__service {
+			margin-bottom: 1.8rem;
+		}
+	}
+	// WHO WILL WORK
+}
+@media (max-width: 767px) {
+	// HEADER
+	.header {
+		&__card {
+			&-title {
+				font-size: 3rem;
+				line-height: 3.5rem;
+			}
+		}
+	}
+	// HEADER
+	// WHAT WE DO
+	.what-we-do {
+		&__card {
+			.card {
+				width: 80%;
+				padding: 2rem;
+			}
+		}
+		&__block {
+			padding: 3rem;
+		}
+		&__calculation {
+			.card {
+				padding: 2rem;
+			}
+		}
+	}
+	// WHAT WE DO
+}
+@media (max-width: 576px) {
+	// HEADER
+	.header {
+		&__card {
+			&-title {
+				font-size: 2.2rem;
+				line-height: 2.5rem;
+			}
+			&-btn {
+				padding: 1.5rem;
+			}
+		}
+	}
+	// HEADER
+	// ABOUT
+	.about {
+		&__caption {
+			&-title {
+				font-size: 2rem;
+				line-height: 2.8rem;
+			}
+		}
+		&__image {
+			margin: 1rem 0 1.2rem 0;
+		}
+	}
+	// ABOUT
+	// BANNER
+	.banner {
+		&__text {
+			font-size: 2rem;
+			line-height: 2.8rem;
+		}
+	}
+	// BANNER
+	// WHAT WE DO
+	.what-we-do {
+		&__caption {
+			&-title {
+				font-size: 2rem;
+				line-height: 2.8rem;
+			}
+		}
+	}
+	// WHAT WE DO
+	// TECHNOLOGIES STACK
+	.technologies-stack {
+		&__caption {
+			&-title {
+				font-size: 2rem;
+				line-height: 2.5rem;
+			}
+		}
+	}
+	// TECHNOLOGIES STACK
+	// CASES
+	.cases {
+		&__caption {
+			&-title {
+				font-size: 2rem;
+				line-height: 2.5rem;
+			}
+		}
+	}
+	// CASES
+	// PRICES
+	.prices {
+		&__caption {
+			&-title {
+				font-size: 2rem;
+				line-height: 2.5rem;
+			}
+		}
+	}
+	// PRICES
+	// WHO WILL WORK
+	.who-will-work {
+		&__caption {
+			&-title {
+				font-size: 2rem;
+				line-height: 2.5rem;
+			}
+		}
+	}
+	// WHO WILL WORK
+}
+@media (max-width: 380px) {
+	// ABOUT
+	.about {
+		&__image {
+			min-height: 60vw;
+		}
+	}
+	// ABOUT
+}

@@ -1,0 +1,423 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="css/main.css")
+	body
+		//- NAVIGATION
+		section.navigation
+			div.col-xl-10.col-lg-11.ml-auto.mr-auto
+				div.row
+					div.col-12.pl-lg-0.pr-lg-0
+						nav.navbar.navbar-expand-lg.navbar-light.d-flex.flex-column.flex-lg-row.align-items-center
+							a.navbar-brand.mb-3.mb-lg-0(href="#")
+								img.navigation__logo(src="img/logo.png", alt="")
+							button.navbar-toggler.mb-3.mb-lg-0(type="button", data-toggle="collapse", data-target="#navbarText", aria-controls="navbarText", aria-expanded="false", aria-label="Toggle navigation")
+								span.navbar-toggler-icon
+							div.collapse.navbar-collapse(id="navbarText")
+								ul.navigation__menu.d-flex.justify-content-between.navbar-nav.mr-auto.ml-auto
+									li.nav-item
+										a.nav-link(href="#") Студия
+									li.nav-item
+										a.nav-link(href="#") Горячий ЦЕХ
+									li.nav-item
+										a.nav-link(href="#") Проекты
+									li.nav-item
+										a.nav-link(href="#") Тариф
+									li.nav-item
+										a.nav-link(href="#") Блог
+									li.nav-item
+										a.nav-link(href="#") Работа у нас
+							span.navbar-text
+								button.btn.btn-outline-dark Рассчитать проект
+		//- NAVIGATION
+		//- HEADER
+		section.header
+			div.col-xl-10.col-lg-11.mr-auto.ml-auto.header__bg.d-flex.flex-column.flex-lg-row.align-items-center
+				div.card.header__card.col-xl-5.offset-xl-1.col-lg-6.col-12.pl-lg-0.pr-lg-0
+					div.card-body
+						h1.header__card-title Простая разработка
+						p.header__card-text Фронтенд и бэкенд разработка корпоративных порталов и интернет-каталогов. Простые интеграции по приемлемой стоимости.
+						div.d-flex.justify-content-lg-start.justify-content-center
+							div
+								button.btn.btn-secondary.header__card-btn Заказать расчет проекта
+				div.header__image-block.col-lg-6.col-12.pl-lg-0.pr-lg-0
+
+		//- HEADER
+		//- ABOUT
+		section.about
+			div.col-xl-9.col-lg-11.mr-auto.ml-auto
+				div.row
+					div.col-lg-7
+						div.about__caption
+							h2.about__caption-title Интернет — отличная площадка для развития малого бизнеса
+							p.about__caption-text Но создать достойное онлайн-представительство с ограниченным бюджетом непросто.
+			div.col-xl-10.col-lg-11.mr-auto.ml-auto
+				div.row
+					div.col-lg-6
+						div.about__image
+					div.col-lg-6
+						div.row
+							div.col-12
+								div.card.about__card
+									div.card-body
+										div.d-flex.justify-content-lg-start.justify-content-center
+											div.about__card-image
+												img.about__constructor-img(src="img/about-constructor.png", alt="")
+										h5.card-title Конструктора недостаточно
+										p.card-text Вам нужен индивидуальный сайт или каталог. Базовых возможностей конструктора сайтов недостаточно: вы хотите индивидуальную вёрстку, анимацию, функционал.
+							div.col-12
+								div.card.about__card
+									div.card-body
+										div.d-flex.justify-content-lg-start.justify-content-center
+											div.about__card-image
+												img.about__lamp-img(src="img/about-lamp.png", alt="")
+										h5.card-title Конструктора недостаточно
+										p.card-text Вам нужен индивидуальный сайт или каталог. Базовых возможностей конструктора сайтов недостаточно: вы хотите индивидуальную вёрстку, анимацию, функционал.
+							div.col-12
+								div.card.about__card
+									div.card-body
+										div.d-flex.justify-content-lg-start.justify-content-center
+											div.about__card-image
+												img.about__cubs-img(src="img/about-cubs.png", alt="")
+										h5.card-title Конструктора недостаточно
+										p.card-text Вам нужен индивидуальный сайт или каталог. Базовых возможностей конструктора сайтов недостаточно: вы хотите индивидуальную вёрстку, анимацию, функционал.
+							div.col-12
+								div.card.about__card
+									div.card-body
+										div.d-flex.justify-content-lg-start.justify-content-center
+											div.about__card-image
+												img.about__purse-img(src="img/about-purse.png", alt="")
+										h5.card-title Конструктора недостаточно
+										p.card-text Вам нужен индивидуальный сайт или каталог. Базовых возможностей конструктора сайтов недостаточно: вы хотите индивидуальную вёрстку, анимацию, функционал.
+
+										
+
+		//- ABOUT
+		//- BANNER
+		section.banner.d-flex.align-items-center.flex-column.justify-content-center
+			div.col-xl-6.col-lg-9.col-md-10.ml-auto.mr-auto.text-center
+				img.banner__img(src="img/banner-logo.png", alt="")
+				p.banner__text Доступная разработка TSEKH.design – выход для малого бизнеса, который готов развиваться.
+		//- BANNER
+		//- WAHT WE DO
+		section.what-we-do
+			div.col-xl-9.col-lg-11.mr-auto.ml-auto
+				div.row
+					div.col-lg-6
+						div.what-we-do__caption
+							h2.what-we-do__caption-title Что мы делаем в рамках доступной разработки?
+				div.row
+					div.col-lg-5.what-we-do__card.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.card
+							img(src="img/what-we-do-img-1.png", alt="")
+					div.col-lg-7.d-flex.align-items-center.what-we-do__block.justify-content-lg-start.justify-content-center
+						div
+							h5.what-we-do__block-title Корпоративные порталы
+							p Многостраничные сайты с комплексной информацией о компании.
+							p История развития, направления деятельности, актуальные офферы, новости, бренды и типы товаров/услуг в каталоге и т. д.
+							p Удобная CMS, чтобы вы могли самостоятельно добавлять и корректировать информацию, создавать новые типовые страницы и удалять неактуальные.
+				div.row
+					div.col-lg-5.what-we-do__card.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.card
+							img(src="img/what-we-do-img-2.png", alt="")
+					div.col-lg-7.d-flex.align-items-center.what-we-do__block.justify-content-lg-start.justify-content-center
+						div
+							h5.what-we-do__block-title Каталоги товаров
+							p С фотографиями, описаниями, техническими характеристиками и ценами на каждый товар.
+							p Единственное отличие от интернет-магазина — товары нельзя купить на сайте напрямую.
+							p Интеграция с CRM для управления каталогом и отдельными товарами.
+				div.row
+					div.col-lg-5.what-we-do__card.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.card
+							img(src="img/what-we-do-img-3.png", alt="")
+					div.col-lg-7.d-flex.align-items-center.what-we-do__block.justify-content-lg-start.justify-content-center
+						div
+							h5.what-we-do__block-title Простые интеграции
+							ul.list-unstyled
+								li Google Аналитика
+								li Яндекс.Метрика
+								li JivoSite и аналогичные сервисы	
+								li Почтовые сервисы
+								li Интеграции с облачными CRM (например, amoCRM)
+								li Различные маркетинговые сервисы.
+								li.cancel Не реализуем интеграции с системами САП, 1С и т. д.
+				div.row
+					div.col-12.what-we-do__calculation
+						div.card
+							div.row
+								div.col-lg-5.d-flex.justify-content-lg-start.justify-content-center
+									div
+										img(src="img/what-we-do__calculation.png", alt="")
+								div.col-lg-7.d-flex.align-items-center
+									div
+										h5.card-title Заказать расчет проекта
+										p.card-text Опишите цели проекта, задачи и нужный стек разработки, если это важно. Мы рассчитаем примерную стоимость в пределах одного дня
+										div.what-we-do__calculation-form
+											form
+												div.row
+													div.col-lg-6
+														div.form-group
+															input.form-control(type="text", placeholder="Имя")
+													div.col-lg-6
+														div.form-group
+															input.form-control(type="tel", placeholder="Номер телефона")
+												div.row
+													div.col-lg-6
+														button(type="button").btn.btn-primary.btn-block Заказать расчет
+													div.col-lg-6
+														div
+															p.what-we-do__calculation-form-text Нажимая кнопку "Заказать расчет", я даю согласие на обработку своих персональных данных
+		//- WHAT WE DO
+		//- TECHNOLOGIES STACK
+		section.technologies-stack
+			div.col-xl-9.col-lg-11.ml-auto.mr-auto
+				div.row
+					div.col-12.text-left
+						div.technologies-stack__caption
+							h2.technologies-stack__caption-title Стек технологий
+				div.row
+					div.technologies-stack__block.col-lg-4.d-flex.justify-content-lg-start.justify-content-center
+						div
+							img.technologies-stack__img(src="img/tech-stack-vue.png", alt="")
+					div.technologies-stack__block.col-lg-4.d-flex.justify-content-lg-start.justify-content-center
+						div
+							img.technologies-stack__img(src="img/tech-stack-djan.png", alt="")
+					div.technologies-stack__block.col-lg-4.d-flex.justify-content-lg-start.justify-content-center
+						div
+							img.technologies-stack__img(src="img/tech-stack-elastic.png", alt="")
+		//- TECHNOLOGIES STACK
+		//- CASES
+		section.cases
+			div.col-xl-9.col-lg-11.mr-auto.ml-auto
+				div.row
+					div.col-12
+						div.cases__caption
+							h2.cases__caption-title Кейсы 
+				div.row.cases__section
+					div.col-xl-7.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.cases__image
+							img(src="img/cases-img-1.jpg", alt="")
+							a(href="#").cases__image-overlay.d-flex.justify-content-center.align-items-center
+								span.cases__image-overlay-arrow Смотреть проект
+					div.col-xl-5.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.cases__card
+							h5.cases__card-title Интернет магазин для Снежной Королевы
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info +47%
+								div
+									p.mb-0 К конверсии в первый месяц по сравнению с моб. версией
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info +1,8%
+								div
+									p.mb-0 Прирост мужской аудитории за 2018–2019 гг.
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info +11%
+								div
+									p.mb-0 Увеличение среднего чека (все когорты пользователей)
+							div.cases__card-img.d-flex.justify-content-lg-start.justify-content-center
+								div
+									img(src="img/cases-card-img-1.png", alt="")
+
+				div.row.cases__section
+					div.col-xl-7.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.cases__image
+							img(src="img/cases-img-2.jpg", alt="")
+							a(href="#").cases__image-overlay.d-flex.justify-content-center.align-items-center
+								span.cases__image-overlay-arrow Смотреть проект
+					div.col-xl-5.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.cases__card
+							h5.cases__card-title Интернет магазин для Maximum
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info 217+
+								div
+									p.mb-0 Дизайн макетов, детально-проработанных сценариев
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info 2020
+								div
+									p.mb-0 Запуск первого алкогольного e-Commerce в России
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info 0.1 сек
+								div
+									p.mb-0 Скорость загрузки страниц: самый быстрый фронтенд
+							div.cases__card-img.d-flex.justify-content-lg-start.justify-content-center
+								div
+									img(src="img/cases-card-img-2.png", alt="")
+				div.row.cases__section
+					div.col-xl-7.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.cases__image
+							img(src="img/cases-img-3.jpg", alt="")
+							a(href="#").cases__image-overlay.d-flex.justify-content-center.align-items-center
+								span.cases__image-overlay-arrow Смотреть проект
+					div.col-xl-5.d-flex.align-items-center.justify-content-lg-start.justify-content-center
+						div.cases__card
+							h5.cases__card-title Логотип MobiApp
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info +20%
+								div
+									p.mb-0 Целевое увеличение конверсии на тестах
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info 5
+								div
+									p.mb-0 Кликов до целевого действия: сократили сценарий в два раза
+							div.cases__card-block.d-flex.align-items-center
+								div
+									div.cases__card-badge.badge.badge-info +33%
+								div
+									p.mb-0 Увеличение среднего чека
+							div.cases__card-img.d-flex.justify-content-lg-start.justify-content-center
+								div
+									img(src="img/cases-card-img-3.png", alt="")
+		//- CASES
+		section.prices
+			div.col-xl-9.col-lg-11.mr-auto.ml-auto
+				div.row
+					div.col-12
+						div.prices__caption
+							h2.prices__caption-title Сколько стоит доступная разработка?
+				div.row
+					div.col-12.prices__price.d-flex.flex-xl-row.flex-column.align-items-center
+						div.mb-xl-0.mb-3
+							p.prices__price-text.mb-0 Мы работаем по time and materials с фиксированной стоимостью часа.
+						div.mb-xl-0.mb-3
+							div.prices__price-badge 1 190 ₽
+						div
+							p.prices__price-text.mb-0 в час
+				div.row
+					div.col-12.prices__form
+						div.row
+							div.col-lg-4
+								div.form-group
+									input.form-control(type="text", placeholder="Имя")
+							div.col-lg-4
+								div.form-group
+									input.form-control(type="tel", placeholder="Номер телефона")
+							div.col-lg-4
+								div.form-group
+									button.btn.btn-warning.btn-block(type="button") Заказать расчет
+							div.col-12
+								p.prices__form-text.mb-0 Нажимая кнопку "отправить", я даю согласие на обработку своих персональных данных
+		section.who-will-work
+			div.col-xl-9.col-lg-11.ml-auto.mr-auto
+				div.row
+					div.col-12
+						div.who-will-work__caption
+							h2.who-will-work__caption-title Кто будет работать над вашим проектом?
+				div.row
+					div.col-12
+						div.card.who-will-work__card
+							img(src="img/who-will-work-card-img.jpg", alt="").who-will-work__card-img
+							div.row
+								div.col-lg-6.d-flex.align-items-center
+									div
+										p.who-will-work__card-text Команда junior-разработчиков. Час их работы стоит дешевле, чем разработка в крупных компаниях. При  этом их компетенции хватает для выполнения простых интеграций.
+								div.col-lg-6.d-flex.flex-lg-row.flex-column.align-items-center
+									div
+										img.who-will-work__card-icon(src="img/programmer-icon.png", alt="")
+									div
+										p.who-will-work__card-icon-text Курирует разработку senior-разработчик Антон Копкин
+				div.row
+					div.col-12
+						div.who-will-work__caption
+							h2.who-will-work__caption-title Если вам нужна не только разработка
+							p.who-will-work__caption-text Команда TSEKH.design возьмёт на себя:
+				div.row
+					div.col-lg-4.col-md-6
+						div.who-will-work__service.card.who-will-work__service_graph-design
+							div.card-body
+								h5.card-title Графический дизайн
+								div.who-will-work__service-tags
+									span.badge.badge-light Иллюстрации
+									span.badge.badge-light Презентации
+									span.badge.badge-light Открытки
+									span.badge.badge-light Рекламные баннеры
+									span.badge.badge-light Памятки
+									span.badge.badge-light Плакаты
+							a(href="#").who-will-work__service-overlay
+								div.who-will-work__service-overlay-arrow.d-flex.justify-content-center.align-items-center
+									span
+					div.col-lg-4.col-md-6
+						div.who-will-work__service.card.who-will-work__service_web-design
+							div.card-body
+								h5.card-title Веб-дизайн
+								div.who-will-work__service-tags
+									span.badge.badge-light Лендинги
+									span.badge.badge-light Многостраничные сайты
+									span.badge.badge-light Интернет-магазины
+							a(href="#").who-will-work__service-overlay
+								div.who-will-work__service-overlay-arrow.d-flex.justify-content-center.align-items-center
+									span
+					div.col-lg-4.col-md-6
+						div.who-will-work__service.card.who-will-work__service_more
+							div.card-body
+								h5.card-title Дополнительные услуги
+								div.who-will-work__service-tags
+									span.badge.badge-light Маркетинг
+									span.badge.badge-light Аналитика
+									span.badge.badge-light Корректура
+									span.badge.badge-light Верстка сайтов и лендингов
+									span.badge.badge-light Копирайтинг
+							a(href="#").who-will-work__service-overlay
+								div.who-will-work__service-overlay-arrow.d-flex.justify-content-center.align-items-center
+									span
+		section.footer
+			div.col-xl-9.col-lg-11.mr-auto.ml-auto
+				div.row
+					div.col-12.d-flex.justify-content-lg-start.justify-content-center
+						div.footer__logo
+							img(src="img/logo-footer.png", alt="")
+				div.row
+					div.col-lg-3.footer__block.d-flex.justify-content-lg-start.justify-content-center
+						div.text-lg-left.text-center
+							h5.footer__title Наши подразделения
+							ul.list-unstyled
+								li
+									a(href="#") Бизнес-презентации
+								li
+									a(href="#") Графический дизайн
+								li
+									a(href="#") E-Commerce
+								li
+									a(href="#") Лендинги
+					div.col-lg-3.footer__block.d-flex.justify-content-lg-start.justify-content-center
+						div.text-lg-left.text-center
+							h5.footer__title Приходите в гости
+							ul.list-unstyled
+								li
+									p Москва: <br>ул. Ильинка, д. 4 (Гостиный Двор)
+								li
+									p Тольятти: <br>ул. Офицерская, д. 12А, корп. 1 (ТЦ «Рим»)
+								li
+									p Краснодар: <br>ул. Северная, д. 490 (БЦ «Кутузовский»)
+					div.col-lg-3.footer__block.d-flex.justify-content-lg-start.justify-content-center
+						div.text-lg-left.text-center
+							h5.footer__title Всегда на связи
+							ul.list-unstyled
+								li
+									a(href="mailto:hello@tsekh.design") hello@tsekh.design
+								li
+									a(href="tel:+74953692029") +7 495 369 20 29
+					div.col-lg-3.footer__block.d-flex.justify-content-lg-start.justify-content-center
+						div.text-lg-left.text-center
+							h5.footer__title Мы в соцсетях
+							ul.list-unstyled.d-flex.footer__socials
+								li
+									a(href="#")
+										img(src="img/facebook-icon.png", alt="")
+								li
+									a(href="#")
+										img(src="img/instagram-icon.png", alt="")
+								li
+									a(href="#")
+										img(src="img/be-icon.png", alt="")
+
+		script(src="js/bundle.js")

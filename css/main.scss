@@ -1,0 +1,808 @@
+// GLOBAL STYLES
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+	font-family: Gilroy-Regular;
+	src: url('../fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+	font-family: Gilroy-Bold;
+	src: url('../fonts/Gilroy-Bold.ttf');
+}
+a,
+button,
+input {
+	&:focus {
+		outline: none!important;
+		box-shadow: none!important;
+	}
+}
+// GLOBAL STYLES
+
+// NAVIGATION
+.navigation {
+	&__logo {
+		max-width: 100%;
+	}
+	.navbar {
+		padding: 2.125rem 0;
+		&-brand {
+			padding-top: 0;
+		}
+		&-toggler {
+			border: none;
+		}
+	}
+	&__menu {
+		width: 70%;
+		.nav-link {
+			color: #333333;
+			font-family: Gilroy-Regular;
+			font-weight: 600;
+			font-size: 1rem;
+			letter-spacing: 0.006rem;
+			line-height: 1rem;
+		}
+	}
+	.btn {
+		padding: 0.75rem 2.5rem;
+		border-radius: 0.313rem;
+		border: 2px solid #333333;
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+		font-family: Gilroy-Bold;
+		-webkit-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		&:hover,
+		&:active {
+			background: #333333!important;
+			color: #ffffff!important;
+		}
+	}
+}
+// NAVIGATION
+
+// HEADER
+.header {
+	&__bg {
+		min-height: 650px;
+		background: url('../img/header-bg.jpg') no-repeat center top / cover;
+	}
+	&__card {
+		background: none;
+		border: none;
+		&-title {
+			font-family: Gilroy-Bold;
+			color: #333333;
+			font-size: 4rem;
+			line-height: 4.5rem;
+			margin-bottom: 1.625rem;
+		}
+		&-text {
+			color: #333333;
+			font-size: 1.5rem;
+			line-height: 2.25rem;
+			font-family: Gilroy-Regular;
+			margin-bottom: 2.875rem;
+		}
+		&-btn {
+			background: #3454F5;
+			color: #ffffff;
+			padding: 1.5rem 5rem;
+			font-size: 1rem;
+			line-height: 1.5rem;
+			font-family: Gilroy-Bold;
+			border-radius: 0.313rem;
+			border: none;
+			&:hover,
+			&:active,
+			&:focus {
+				background: #3454F5!important;
+				color: #ffffff!important;
+			}
+		}
+	}
+	&__image-block {
+		position: relative;
+		background: url('../img/purse.png') no-repeat,
+					url('../img/elasticsearch.png') no-repeat,
+					url('../img/django.png') no-repeat,
+					url('../img/vue-js.png') no-repeat,
+					url('../img/header-spot.png') no-repeat;
+		background-size: 28%, 50%, 50%, 50%, cover;
+		background-position: 12% 32%,60% 60%, 43% 38%, 40% 14%, 30% center;
+		min-height: 38vw;
+		z-index: 100;
+	}
+}
+// HEADER
+
+// ABOUT
+.about {
+	padding: 6.25rem 0;
+	&__caption {
+		&-title {
+			color: #333333;
+			font-family: Gilroy-Bold;
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 1.3rem;
+		}
+		&-text {
+			font-family: Gilroy-Regular;
+			color: #333333;
+			font-size: 1.25rem;
+			line-height: 2rem;
+		}
+	}
+	&__image {
+		margin-top: 0.5rem;
+		background: url('../img/about-box.png') no-repeat,
+					url('../img/about-constructor.png') no-repeat,
+					url('../img/about-clock.png') no-repeat,
+					url('../img/about-lamp.png') no-repeat,
+					url('../img/about-purse.png') no-repeat,
+					url('../img/about-heart.png') no-repeat,
+		           	url('../img/about-box-bg.png') no-repeat;
+		background-position: -10% -70px, 0 9%, 67% 33%,70% 18%,56% 8%, 43% 5%, left center;
+		background-size: 80%, 35%, 20%, 20%, 18% ,20%, 90%, 90%;
+		width: 100%;
+		min-height: 38vw;
+		img {
+			max-width: 70%;
+		}
+		
+	}
+	&__constructor-img {
+		position: absolute;
+		width: 8.938rem;
+		top: 0;
+		left: -3%;
+	}
+	&__lamp-img {
+		position: absolute;
+		top: -1rem;
+		left: 0;
+		width: 6.226rem;
+	}
+	&__cubs-img {
+		position: absolute;
+		top: 0;
+		left: 1%;
+		width: 5.188rem;
+	}
+	&__purse-img {
+		position: absolute;
+		top: -1rem;
+		left: 0;
+		width: 6.273rem;
+	}
+	&__card {
+		margin-bottom: 4.938rem;
+		border: none;
+		&-image {
+			position: relative;
+			width: 120px;
+			height: 120px;
+			background: url('../img/about-card-img-bg.png') no-repeat center center;
+			background-size: 80%;
+			img {
+				max-width: 100%;
+				margin-top: 0.5rem;
+				margin-left: 0.6rem;
+			}
+		}
+		.card-title {
+			font-family: Gilroy-Bold;
+			color: #333333;
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
+		.card-text {
+			font-family: Gilroy-Regular;
+			color: #333333;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+		}
+	}
+}
+// ABOUT
+
+// BANNER
+.banner {
+	position: relative;
+	min-height: 56.25rem;
+	background: url('../img/arrow-top-1.png') no-repeat,
+				url('../img/arrow-top-2.png') no-repeat,
+				url('../img/arrow-top-3.png') no-repeat,
+				url('../img/arrow-top-4.png') no-repeat,
+				url('../img/arrow-top-5.png') no-repeat,
+				url('../img/arrow-top-6.png') no-repeat,
+				url('../img/arrow-top-7.png') no-repeat,
+				#3454F5;
+	background-size: 50px 113px, 50px 113px, 50px 113px, 50px 113px, 50px 113px, 50px 113px, 50px 113px;
+	background-position: 13% 20%, 40% 18%, 73% 12%, 85% 52%, 77% 83%, 34% 102%, 15% 63%;
+	&__img {
+		max-width: 100%;
+		margin-bottom: 3.813rem;
+	}
+	&__text {
+		font-family: Gilroy-Bold;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		text-align: center;
+		color: #ffffff;
+	}
+}
+// BANNER
+
+// WHAT WE DO
+.what-we-do {
+	padding: 9.688rem 0;
+	&__caption {
+		&-title {
+			color: #333333;
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 3.125rem;
+			font-family: Gilroy-Bold;
+		}
+	}
+	&__card {
+		margin-bottom: 8.875rem;
+		.card {
+			border: 5px solid #3A3A3A;
+			border-radius: 1.25rem;
+			background: #FFFFFF;
+			padding: 3.25rem;
+			width: 100%;
+			box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.15);
+			img {
+				border-radius: 1.25rem;
+				max-width: 100%;
+			}
+		}
+	}
+	&__block {
+		margin-bottom: 8.875rem;
+		padding: 5.289rem;
+		&-title {
+			color: #333333;
+			font-family: Gilroy-Bold;
+			font-size: 1.875rem;
+			line-height: 2.5rem;
+		}
+		p {
+			color: #333333;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			font-family: Gilroy-Regular;
+		}
+		ul {
+			li {
+				font-family: Gilroy-Regular;
+				font-size: 1.125rem;
+				line-height: 1.75rem;
+				color: #333333;
+				&:before {
+					position: relative;
+					top: -2px;
+					content: "";
+					display: inline-block;
+					background: url('../img/plus.png') no-repeat center center;
+					background-size: 100%;
+					width: 0.438rem;
+					height: 0.438rem;
+					margin-right: 0.875rem;
+				}
+				&.cancel {
+					color: #E46868;
+					&:before {
+						background: url('../img/minus.png') no-repeat center center;
+					}
+				}
+			}
+		}
+	}
+	&__calculation {
+		.card {
+			background: #EFF7FF;
+			border: none;
+			border-radius: 0.938rem;
+			padding: 3.25rem;
+			img {
+				max-width: 100%;
+			}
+			&-title {
+				color: #333333;
+				font-family: Gilroy-Bold;
+				font-size: 1.875rem;
+				line-height: 2.5rem;
+			}
+			&-text {
+				font-family: Gilroy-Regular;
+				color: #333333;
+				font-size: 1.125rem;
+				line-height: 1.75rem;
+			}
+		}
+		&-form {
+			.form-group {
+				margin-bottom: 1.25rem;
+			}
+			.form-control {
+				font-family: Gilroy-Regular;
+				padding: 2.2rem 1.5rem;
+				color: #999999;
+				font-size: 1.125rem;
+				line-height: 1.75rem;
+				border: none;
+				background: #FFFFFF;
+				border-radius: 0.313rem; 
+				&::-webkit-input-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+				&::-moz-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+				&:-ms-input-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+				&:-moz-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+			}
+			.btn {
+				background: #3454F5;
+				padding: 1.39rem;
+				color: #FFFFFF;
+				font-family: Gilroy-Bold;
+				font-size: 1rem;
+				line-height: 1.5rem;
+				border-radius: 0.313rem;
+				&:active {
+					background: #3454F5!important;
+					color: #FFFFFF!important;
+				}
+			}
+			&-text {
+				font-family: Gilroy-Regular;
+				font-size: 0.875rem;
+				line-height: 1.5rem;
+				color: #999999;
+			}
+		}
+	}
+}
+// WHAT WE DO
+
+// TECHNOLOGIES STACK
+.technologies-stack {
+	background: #EFF7FF;
+	padding: 5rem 0;
+	&__caption {
+		margin-bottom: 3.125rem;
+		&-title {
+			font-family: Gilroy-Bold;
+			color: #333333;
+			font-size: 2.5rem;
+			line-height: 3rem;
+		}
+	}
+	&__img {
+		max-width: 100%;
+	}
+}
+// TECHNOLOGIES STACK
+
+// CASES
+.cases {
+	padding: 8.75rem 0;
+	&__caption {
+		margin-bottom: 3.125rem;
+		&-title {
+			color: #333333;
+			font-family: Gilroy-Bold;
+			font-size: 2.5rem;
+			line-height: 3rem;
+		}
+	}
+	&__image {
+		position: relative;
+		border-radius: 0.938rem;
+		margin-bottom: 2rem;
+		min-height: 300px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 0.938rem;
+		}
+		&-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 0.938rem;
+			-webkit-transition: background 0.2s ease-in-out;
+			transition: background 0.2s ease-in-out;
+			&-arrow {
+				color: #FFFFFF;
+				font-family: Gilroy-Regular;
+				font-weight: 600;
+				font-size: 1rem;
+				line-height: 1.5rem;
+				display: none;
+				-webkit-transition: display 0.3s ease-in-out;
+				transition: display 0.3s ease-in-out;
+				&:before {
+					display: block;
+					margin: 0 auto;
+					content: "";
+					background: url('../img/arrow-right.png') no-repeat center center;
+					background-size: 100%;
+					width: 3rem;
+					height: 3rem;
+				}
+			}
+			&:hover {
+				background: rgba(52, 84, 245, 0.9);
+				&>.cases__image-overlay-arrow {
+					display: block;
+				}
+			}
+		}
+	}
+	&__card {
+		margin-bottom: 2rem;
+		&-title {
+			color: #333333;
+			font-family: Gilroy-Bold;
+			font-size: 1.25rem;
+			line-height: 2rem;
+			margin-bottom: 1.5rem;
+		}
+		&-block {
+			margin-bottom: 1rem;
+			p {
+				color: #333333;
+				font-family: Gilroy-Regular;
+				font-weight: 600;
+				font-size: 1rem;
+				line-height: 1.5rem;
+			}
+		}
+		&-badge {
+			width: 6rem;
+			margin-right: 1.063rem;
+			padding: 0.875rem;
+			color: #3454F5;
+			font-family: Gilroy-Regular;
+			font-weight: 600;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			background: #EFF7FF;
+			border-radius: 0.313rem;
+		}
+		&-img {
+			margin-top: 2.063rem;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+// CASES
+
+// PRICES
+.prices {
+	background: #3454F5;
+	padding: 5rem 0;
+	&__caption {
+		margin-bottom: 1.875rem;
+		&-title {
+			font-family: Gilroy-Bold;
+			font-size: 2.5rem;
+			color: #FFFFFF;
+			line-height: 3rem;
+		}
+	}
+	&__price {
+		margin-bottom: 3rem;
+		&-text {
+			color: #FFFFFF;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			font-family: Gilroy-Regular;
+		}
+		&-badge {
+			color: #333333;
+			background: #FFFFFF;
+			font-family: Gilroy-Bold;
+			font-size: 1.5rem;
+			line-height: 2.25rem;
+			width: 9rem;
+			padding: 0.625rem 0;
+			text-align: center;
+			border-radius: 0.313rem;
+			margin-left: 1.25rem;
+			margin-right: 1.25rem;
+		}
+	}
+	&__form {
+		.form-control {
+			font-family: Gilroy-Regular;
+			padding: 2.2rem 1.5rem;
+			color: #999999;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			border: none;
+			background: #FFFFFF;
+			border-radius: 0.313rem; 
+			&::-webkit-input-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+				&::-moz-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+				&:-ms-input-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+				&:-moz-placeholder {
+					font-family: Gilroy-Regular;
+					color: #999999;
+					font-size: 1.125rem;
+				}
+		}
+		.btn {
+			padding: 1.39rem;
+			color: #333333;
+			font-size: 1rem;
+			line-height: 1.5rem;
+			font-family: Gilroy-Regular;
+			font-weight: 800;
+			background: #FFE818;
+			border-radius: 0.313rem;
+			&:hover,
+			&:active {
+				color: #333333!important;
+				background: #FFE818!important;
+			}
+		}
+		&-text {
+			color: #FFFFFF;
+			font-family: Gilroy-Regular;
+			font-size: 0.875rem;
+			line-height: 1.5rem;
+		}
+	}
+}
+// PRICES
+
+// WHO WILL WORK
+.who-will-work {
+	padding: 8.75rem 0;
+	&__caption {
+		margin-bottom: 1.875rem;
+		&-title {
+			color: #333333;
+			font-family: Gilroy-Bold;
+			font-size: 2.5rem;
+			line-height: 3rem;
+		}
+		&-text {
+			color: #333333;
+			font-family: Gilroy-Regular;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+		}
+	}
+	&__card {
+		border: none;
+		margin-bottom: 8.75rem;
+		&-img {
+			border-radius: 0.313rem;
+			margin-bottom: 2rem;
+			object-fit: cover;
+		}
+		&-text {
+			color: #333333;
+			font-family: Gilroy-Regular;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+		}
+		&-icon {
+			margin-right: 1.938rem;
+			width: 6.313rem;
+			height: 6.313rem;
+		}
+		&-icon-text {
+			color: #333333;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			font-weight: 600;
+		}
+	}
+	&__service {
+		border-radius: 0;
+		border: none;
+		min-height: 28.75rem;
+		.card-title {
+			color: #333333;
+			font-family: Gilroy-Bold;
+			font-size: 1.25rem;
+			line-height: 1.75rem;
+			margin-bottom: 1.25rem;
+		}
+		.card-body {
+			padding: 2.5rem;
+		}
+		&-tags {
+			.badge {
+				background: #FFFFFF;
+				padding: 0.25rem 0.5rem;
+				color: #333333;
+				font-family: Gilroy-Regular;
+				font-size: 0.75rem;
+				line-height: 1rem;
+				margin-right: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+		}
+		&_graph-design {
+			background: 
+			        url('../img/graph-design-img.png'),
+					url('../img/who-will-work-service-ellipse-dark.png'),
+					url('../img/who-will-work-service-ellipse-light.png'),
+					#EFF7FF;
+			background-position: right bottom, right bottom, right bottom;
+			background-size: 95% auto, 70% auto, 80% auto;
+			background-repeat: no-repeat;
+		}
+		&_web-design {
+			background: 
+			        url('../img/web-design.png'),
+					url('../img/who-will-work-service-ellipse-dark.png'),
+					url('../img/who-will-work-service-ellipse-light.png'),
+					#EFF7FF;
+			background-position: right bottom, right bottom, right bottom;
+			background-size: 95% auto, 70% auto, 80% auto;
+			background-repeat: no-repeat;
+		}
+		&_more {
+			background: 
+			        url('../img/more-services.png'),
+					url('../img/who-will-work-service-ellipse-dark.png'),
+					url('../img/who-will-work-service-ellipse-light.png'),
+					#EFF7FF;
+			background-position: right bottom, right bottom, right bottom;
+			background-size: 95% auto, 70% auto, 80% auto;
+			background-repeat: no-repeat;
+		}
+		&-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			&-arrow {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 5rem;
+				height: 5rem;
+				background: #3454F5;
+				transition: all 0.2s ease-in-out;
+				&>span {
+					display: block;
+					width: 2rem;
+					height: 2rem;
+					background: url('../img/arrow-right.png') no-repeat center center;
+					background-size: 100%;
+				}
+			}
+			&:hover {
+				&>.who-will-work__service-overlay-arrow {
+					width: 100%;
+					height: 100%;
+					background: rgba(52,84,245,0.9);
+				}
+			}
+		}
+	}
+}
+// WHO WILL WORK
+
+// FOOTER
+.footer {
+	background: #2E3646;
+	padding: 5rem 0;
+	&__logo {
+		img {
+			max-width: 100%;
+		}
+	}
+	&__block {
+		margin-top: 3.313rem;
+	}
+	&__title {
+		color: #FFFFFF;
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		font-family: Gilroy-Bold;
+		margin-bottom: 1rem;
+	}
+	ul {
+		li {
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+			color: #ffffff;
+			margin-bottom: 0.75rem;
+			p {
+				margin-bottom: 0;
+				font-family: Gilroy-Regular;
+			}
+			a {
+				color: #FFFFFF;
+				font-family: Gilroy-Regular;
+				&[href^="mailto"] {
+					&:before {
+						position: relative;
+						top: 5px;
+						margin-right: 1.104rem;
+						display: inline-block;
+						content: "";
+						background: url('../img/envelope.png') no-repeat center center;
+						background-size: 100%;
+						width: 1.25rem;
+						height: 1.25rem;
+					}
+				}
+				&[href^="tel"] {
+					&:before {
+						position: relative;
+						top: 5px;
+						margin-right: 1.104rem;
+						display: inline-block;
+						content: "";
+						background: url('../img/phone-icon.png') no-repeat center center;
+						background-size: 100%;
+						width: 1.25rem;
+						height: 1.25rem;
+					}
+				}
+			}
+		}
+	}
+	&__socials {
+		li {
+			a {
+				margin-right: 1rem;
+			}
+			&:last-child {
+				&>a {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+// FOOTER
+
+// MEDIA QUERIES
+@import 'media.scss';
+// MEDIA QUERIES
